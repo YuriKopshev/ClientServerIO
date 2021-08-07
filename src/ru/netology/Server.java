@@ -10,6 +10,9 @@ import java.net.Socket;
 public class Server {
     public static final int PORT = 8181;
 
+    // В данной задаче выбран способ взаимодействия (BlockingIO), так как числа передаются последовательно,
+    // и результат соответственно рассчитывается для одного переданного числа...
+
     //в данной реализации ряд Фибоначчи начинается с 1,1.....
     public static int getFibonacciValue(int n) {
         if (n == 0) {
